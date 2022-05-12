@@ -1,0 +1,411 @@
+/* *** Reuseable *** */
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *** Navigace neboli menu *** */
+
+nav ul {
+    float: right;
+    margin-top: 12.1px;
+
+    position: fixed;
+    margin-left: 53%;
+    z-index: 100;
+}
+
+nav ul li {
+    display: inline-block;
+    color: white;
+    margin-left: 37px;
+}
+
+nav ul li a
+/* nav ul li a:visited  */ {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 15px;
+    border-bottom: 2px solid transparent
+}
+
+nav ul li a:hover ,
+nav ul li a:active {
+    border-bottom: 3px solid #353e4b;
+    transition: border-bottom 1.3s;
+}
+
+
+/* *** Header **** */
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/Jaguar\ v\ TV.png);
+    background-attachment: fixed;
+    background-size: cover; 
+    height: 100vh
+}
+
+
+#logo img {
+    width: 80px;
+    position: absolute;
+    top: 8.3%;
+    left: 1.3%;
+}
+
+.nav-background {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 41.3px;
+    background-color: rgba(0,0,0,0.7);
+    border-bottom: solid white;
+}
+
+/* .nadpisy {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text h1 {
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+    word-spacing: 3px;
+}
+
+.btn {
+    display: inline-block; 
+    margin-top: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+
+.btn-full:link ,
+.btn-full:visited {
+    background: grey;
+}
+
+.btn-full:hover ,
+.btn-full:active {
+    transition: background 1.5s;
+    background: #353e4b;
+    border: 1px solid #353e4b;
+}
+
+.btn-empty:link ,
+.btn-empty:visited {
+    margin-left: 30px;
+}
+
+.btn-empty:hover ,
+.btn-empty:active {
+    transition: background 1.5s;
+    background: #353e4b;
+    border: 1px solid #353e4b;
+}
+
+.cnt {
+    margin-top: 100px;
+}
+
+/* *** Mobile navigation *** */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 5px;
+    display: none;
+}
+
+
+/* *** knížky a citáty *** */
+
+.heading-main h2 {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 25px;
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #353e4b;
+    margin: 10px auto;
+}
+
+.knizky img {
+    width: 75%;
+    border-radius: 8px;
+    box-shadow: 4px 6px 10px #353e4b;
+}
+
+.citat-1 img {
+    width: 80%;
+    /* height: 800px; */
+    border-radius: 15px;
+    box-shadow: 8px 6px 15px #353e4b;
+}
+
+.text-citaty {
+    margin-bottom: 20px;
+}
+
+.text-citaty p {
+    margin-left: 70px;
+    font-size: 18px;
+}
+
+.text-citaty div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #353e4b;
+    text-align: center;
+    border-radius: 50%;
+    padding: 12.5px;
+    float: left
+}
+
+
+/* *** Reference *** */
+
+.reference {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/Jaguar\ v\ TV.png);
+}
+
+.reference h2 {
+    color: #fff;
+    padding-top: 49px;
+}
+
+.reference h2:after {
+    border-bottom: 2px solid #fff;
+}
+
+.one-reference {
+    color: #fff;
+    font-size: 20px;
+}
+
+.one-reference p {
+    font-style: italic;
+}
+
+.photo-name {
+    margin-top: 15px;
+    margin-bottom: 84px;
+
+}
+
+.photo-name p {
+    padding: 12.5px;
+    margin-left: 55px;
+    font-style: normal;
+}
+
+.photo-name img {
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+
+/* *** Photo galerry *** */
+
+.photo-segment li {
+    list-style-type: none;
+}
+
+.photo-segment img {
+    width: 44%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 28px #353e4b;
+    margin-top: 25px;
+    margin-bottom: 30px;
+
+
+    opacity: 0.8;
+
+    transform: scale(1.15);
+}
+
+.photo-segment_1 img {
+    width: 74%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 28px #353e4b;
+    margin-top: 25px;
+    margin-bottom: 30px;
+
+
+    opacity: 0.8;
+
+    transform: scale(1.15);
+}
+
+.photo-segment_1 img:hover {
+
+    transition: transform 1.5s, opacity 1.5s;
+    
+    transform: scale(1);
+
+    opacity: 1;
+}
+
+.photo-segment img:hover {
+
+    transition: transform 1.5s, opacity 1.5s;
+    
+    transform: scale(1);
+
+    opacity: 1;
+}
+
+.dn img {
+    margin-left: 135px;
+}
+
+.dm img {
+    margin-left: 168px;
+}
+
+/* *** Contact formulář *** */
+
+.contact-form {
+    max-width: 650px;
+    text-align: center;
+}
+
+.contact-form input {
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.contact-form textarea {
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    font-family: arial;
+}
+
+input[type="submit"] {
+    background-color: #353e4b;
+    color: #fff;
+    font-size: 17px;
+}
+
+input[type="submit"]:hover {
+    transition: background-color 0.9s;
+    background-color: grey;
+    color: black;
+}
+
+
+/* *** Kontakt *** */
+.kontakt {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.marg_kont {
+    margin-left: 25px;
+    margin-top: 675px;
+    margin-bottom: 18px;
+}
+
+.marg_photo {
+    margin-left: 25px;
+    margin-top: 38px;
+    margin-bottom: 18px;
+}
+
+.marg_citaty {
+    margin-left: 25px;
+    margin-top: 38px;
+    margin-bottom: 18px;
+}
+
+
+/* *** Footer *** */
+.footer-page {
+    background: #353e4b;
+    margin-top: 35px;
+    color: #fff;
+}
+
+.social {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social p {
+    display: inline;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.social p a:link ,
+.social p a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+}
+
+.social p a:hover ,
+.social p a:active {
+    color: black;
+}
+
+
+.footer-text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+/* *** Stop floating *** */
+
+.clearfix {zoom: 1;}
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
